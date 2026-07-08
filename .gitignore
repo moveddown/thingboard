@@ -1,0 +1,68 @@
+# OS and editor noise
+.DS_Store
+Thumbs.db
+Desktop.ini
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+*.local
+config.json
+*.secret.json
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.python-version
+.venv/
+venv/
+env/
+ENV/
+pip-wheel-metadata/
+build/
+dist/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Logs and runtime output
+*.log
+logs/
+tmp/
+temp/
+
+# ThingsBoard local data when using bind mounts instead of Docker volumes
+data/
+tb-data/
+tb-logs/
+thingsboard-data/
+thingsboard-logs/
+
+# MQTT / simulator local files
+mqtt-simulator/config.json
+mqtt-simulator/*.local.json
+
+# OTA test artifacts
+ota-test/downloaded_firmware*.bin
+ota-test/*.tmp
+ota-test/*.part
+
+# Docker local overrides
+docker-compose.override.yml
+compose.override.yml
+
+# Node tooling, in case dashboard helpers are added later
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
